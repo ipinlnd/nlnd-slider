@@ -18,6 +18,14 @@
         "nlnd",
         "ipinlnd"
     ],
+    "bugs": {
+        "url": "https://github.com/ipinlnd/nlnd-slider/issues"
+    },
+    "homepage": "https://github.com/ipinlnd/nlnd-slider#readme",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ipinlnd/nlnd-slider.git"
+    },
     "author": "nlndipi@hotmail.com",
     "license": "ISC",
     "devDependencies": {
