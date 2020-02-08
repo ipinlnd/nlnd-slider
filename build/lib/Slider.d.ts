@@ -6,7 +6,7 @@ interface State {
     index: number;
 }
 declare class Slider extends React.Component<Props, State> {
-    constructor(props: any);
+    constructor(props: Props);
     handleScroll: (event: Event) => void;
     handleKeyDown: (event: Event) => void;
     componentDidMount: () => void;
