@@ -92,7 +92,7 @@ var Slider = /** @class */ (function (_super) {
         };
         _this.componentDidUpdate = function () { };
         _this.render = function () {
-            return React.createElement("div", { style: { height: "100vh" } }, _this.props.children);
+            return React.createElement("div", null, _this.props.children);
         };
         _this.state = {
             index: 0

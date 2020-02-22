@@ -79,7 +79,7 @@ class Slider extends React.Component<Props, State> {
   componentDidUpdate = () => {};
 
   render = () => {
-    return <div style={{ height: "100vh" }}>{this.props.children}</div>;
+    return <div>{this.props.children}</div>;
   };
 }
 
