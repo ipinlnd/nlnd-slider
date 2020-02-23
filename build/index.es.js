@@ -74,6 +74,7 @@ var Slider = /** @class */ (function (_super) {
         };
         _this.componentDidMount = function () {
             window.addEventListener("mousewheel", _this.handleScroll.bind(_this));
+            window.addEventListener("wheel", _this.handleScroll.bind(_this));
             window.addEventListener("keydown", _this.handleKeyDown.bind(_this));
             window.scrollTo({
                 top: 0,
@@ -82,6 +83,7 @@ var Slider = /** @class */ (function (_super) {
         };
         _this.componentWillUnmount = function () {
             window.removeEventListener("mousewheel", _this.handleScroll.bind(_this));
+            window.removeEventListener("wheel", _this.handleScroll.bind(_this));
             window.removeEventListener("keydown", _this.handleKeyDown.bind(_this));
         };
         _this.componentDidUpdate = function () { };

@@ -64,6 +64,7 @@ class Slider extends React.Component<Props, State> {
 
   componentDidMount = () => {
     window.addEventListener("mousewheel", this.handleScroll.bind(this));
+    window.addEventListener("wheel", this.handleScroll.bind(this));
     window.addEventListener("keydown", this.handleKeyDown.bind(this));
     window.scrollTo({
       top: 0,
@@ -73,6 +74,7 @@ class Slider extends React.Component<Props, State> {
 
   componentWillUnmount = () => {
     window.removeEventListener("mousewheel", this.handleScroll.bind(this));
+    window.removeEventListener("wheel", this.handleScroll.bind(this));
     window.removeEventListener("keydown", this.handleKeyDown.bind(this));
   };
 
